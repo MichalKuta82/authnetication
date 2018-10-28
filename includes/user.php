@@ -8,7 +8,7 @@ class User extends mysqli
 	
 	function __construct()
 	{
-		Parent::__construct('localhost', 'root', 'root', 'authentication');
+		Parent::__construct('', '', '', '');
 
 		if ($this->connect_error) {
     		$_SESSION['error'] = 'DB Connection error: ' . $this->connect_error;
